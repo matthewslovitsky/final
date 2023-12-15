@@ -1,0 +1,84 @@
+_______________________________________________________________________________________________________________
+ENABLE OR DISABLE
+
+sudo ifconfig eth0 down
+
+_______________________________________________________________________________________________________________
+RELOADING A PROCESS
+
+sudo systemctl restart <PROCESS>
+
+_______________________________________________________________________________________________________________
+
+NSLOOKUP
+
+Queries Domain Name System (DNS) servers to obtain information about domain names, IP addresses, and related 
+DNS records.
+
+USE:
+
+nslookup <domain_name>
+
+OR:
+
+nslookup <domain_name> <dns_server_ip> 
+
+^^This will query a specific dns server^^
+
+
+_______________________________________________________________________________________________________________
+
+SET UP A NETMASK
+
+sudo ifconfig eth0 <IP_ADDRESS> netmask <NETMASK>
+
+_______________________________________________________________________________________________________________
+
+DIG
+
+retrieve DNS-related information such as IP addresses, name servers, 
+mail exchangers, and more. It stands for "domain information groper"
+
+USE:
+
+dig <domain_name>
+
+
+OR:
+
+dig <domain_name> @8.8.8.8
+
+^^Queries the domain_name using the DNS server located at IP address 8.8.8.8^^
+
+
+
+CAN SPECIFY WHAT RECORDS TO DISPLAY WITH -t
+
+EXAMPLE:
+
+dig -t MX example.com
+
+This command will specifically query and display the MX (Mail Exchange) records for the domain example.com.
+
+
+_______________________________________________________________________________________________________________
+
+WHAT IS BIND????
+
+
+BIND is the most widely used DNS software on the internet.  It was originally designed at the University of
+California, Berkeley (UCB) in the early 1980s. The name originates as an acronym of Berkeley
+Internet Name Domain, reflecting the application's use within UCB. The software consists, most prominently
+, of the DNS server component, called named, a contracted form of name daemon. In addition the suite  contains
+various administration tools, and a DNS resolver interface library. The latest version of BIND is BIND 9.
+
+
+
+
+
+
+
+
+
+
+  
