@@ -1,0 +1,9 @@
+________________________________________________________________________________________________________________
+ADDING A USER INTO GROUP
+
+sudo groupadd ftpgroup
+sudo useradd ftpuser -g ftpgroup -s /sbin/nologin -d /dev/null
+
+________________________________________________________________________________________________________________
+
+FTP supports a linux user, an anon user, and a defined user. 
